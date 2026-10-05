@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đơn giản</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+            background-color: #f3f6fb;
+            color: #222;
+            margin: 0;
+            padding: 24px;
+        }
+        .form-box {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 24px 28px;
+            border: 1px solid #d8e0ec;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #1d4e89;
+            font-size: 22px;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        .field {
+            margin-bottom: 16px;
+        }
+        .field > label,
+        .group-title {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px 10px;
+            border: 1px solid #b8c4d6;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 15px;
+        }
+        .options label {
+            display: inline-block;
+            margin-right: 16px;
+            font-weight: normal;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 24px;
+        }
+        button {
+            font-family: inherit;
+            font-size: 15px;
+            padding: 8px 20px;
+            margin: 0 6px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            background-color: #1d4e89;
+            color: #fff;
+        }
+        button[type="reset"] {
+            background-color: #e3e8f0;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Form thông tin</h1>
+
+        <form action="#" method="get">
+            <div class="field">
+                <label for="yourname">Họ và tên</label>
+                <input type="text" id="yourname" name="yourname" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="field options">
+                <span class="group-title">Sở thích</span>
+                <label><input type="checkbox" name="hobby" value="reading"> Đọc sách</label>
+                <label><input type="checkbox" name="hobby" value="music"> Nghe nhạc</label>
+                <label><input type="checkbox" name="hobby" value="travel"> Du lịch</label>
+                <label><input type="checkbox" name="hobby" value="sports"> Thể thao</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Gửi thông tin</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
